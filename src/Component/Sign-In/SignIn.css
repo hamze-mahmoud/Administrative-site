@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 89vh;
+    background: linear-gradient(135deg, #91a6f1, #8826e9);
+
+}
+  .signin-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 10px 10px rgb(34, 160, 202);
+    width: 100%;
+    position: relative;
+    height: 19rem;
+    max-width: 400px;
+  }
+
+  .signin-container h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: center;
+  }
+
+  .input-group {
+    position: relative;
+    margin-bottom: 1.9rem;
+  }
+
+  .input-group label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #aaa;
+    transition: all 0.3s ease;
+    pointer-events: none;
+    
+  }
+
+  .input-group input {
+    width: 100%;
+    padding: 10px 10px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+
+  .input-group input:focus {
+    transform: scale(1.05); /* Adjust the scale value as needed */
+  transition: transform 0.3s ease; /* Smooth scaling animation */
+    border-color: #6e8efb;
+    box-shadow: 0 0 5px rgba(110, 142, 251, 0.5);
+  }
+
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label {
+    top: -15px;
+    left: 10px;
+    font-size: 16px;
+    color: #6e8efb;
+    background: #fff;
+    padding: 0 5px;
+  }
+
+  .signin-btn {
+    width: 100%;
+    padding: 12px;
+    background: #6e8efb;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size:19px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .signin-btn:hover {
+    background: #5a79e6;
+  }
+
+ 
+  /* Media query for widths between 480px and 768px */
+  @media (max-width: 768px) {
+    .signin-container {
+      width: 85%; /* Further shrink */
+      padding: 1.5rem; /* Adjust padding */
+    }
+
+    .input-group input {
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    .signin-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  @media (min-width: 480px ) {
+    .signin-container {
+      width: 350px;/* Use almost full width */
+      padding: 1rem;
+    }
+
+    .input-group input {
+      font-size: 13px;
+      padding: 8px;
+    }
+
+    .signin-btn {
+      font-size: 13px;
+      padding: 8px;
+    }
+  }
+  @media (min-width: 483px ) {
+    .signin-container {
+      width: 450px;/* Use almost full width */
+      padding: 1rem;
+    
+    }
+
+    .input-group input {
+      font-size: 13px;
+      padding: 8px;
+    }
+
+    .signin-btn {
+      font-size: 17px;
+      padding: 8px;
+    }
+  }
+  /* Media query for ultra-small widths (300px to 480px) */
+  @media (max-width: 480px ) {
+    .signin-container {
+      width: 350px;/* Use almost full width */
+      padding: 1rem;
+    }
+
+    .input-group input {
+      font-size: 13px;
+      padding: 8px;
+    }
+
+    .signin-btn {
+      font-size: 13px;
+      padding: 8px;
+    }
+  }
+  
+  @media (min-width: 910px ) {
+    .signin-container {
+      min-width: 30%;/* Use almost full width */
+      padding: 1rem;
+    }
+
+    .input-group input {
+      font-size: 13px;
+      padding: 8px;
+    }
+
+    .signin-btn {
+      font-size: 13px;
+      padding: 8px;
+    }
+  }
+ 
+
